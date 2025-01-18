@@ -6,7 +6,7 @@ import { Experience, Introduction, PersonalProjects, Education } from '.'
 
 export function Resume() {
   return (
-    <div className=" px-10 py-10">
+    <div className="md:px-10 md:py-10">
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
         <div
           className={
