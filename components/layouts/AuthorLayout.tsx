@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
-import Icon from '@/components/icons/Icon'
+import { Icon } from '@/components/icons/Icon'
 import Image from '@/components/Image'
 
 interface Props {
