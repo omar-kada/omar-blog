@@ -22,7 +22,7 @@ export const Icon = ({ kind, href, size = 8, sizeX, sizeY }: IconProps) => {
     <>
       <span className="sr-only">{kind}</span>
       <Svg
-        className={`text-gray-700 hover:text-primary-500  dark:text-gray-200  dark:hover:text-primary-400	 h-${sizeY ?? size} w-${sizeX ?? size}`}
+        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${sizeY ?? size} w-${sizeX ?? size}`}
       />
     </>
   )
