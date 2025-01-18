@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className={headerClass + ' gap-4 '}>
       <Link href="/" aria-label={siteMetadata.headerTitle}>
-        <div className="flex items-center justify-between p-10 ">
+        <div className="flex items-center justify-between">
           <div className="mr-3 dark:invert">
             <Image
               src={`${process.env.BASE_PATH || ''}/static/images/logo.png`}
