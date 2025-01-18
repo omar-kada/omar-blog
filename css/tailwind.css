@@ -58,3 +58,26 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+h1 {
+  font-size: xx-large;
+}
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
+  @apply font-semibold dark:font-normal;
+}
+
+strong {
+  @apply dark:opacity-100;
+}
+.dashed-list {
+  list-style-type: '- ';
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

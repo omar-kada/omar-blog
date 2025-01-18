@@ -1,31 +1,22 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
+  title: "Omar's Blog",
+  author: 'Omar Kada',
+  headerTitle: "Omar's Blog",
   description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  language: 'en-gb',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://omar-kada.github.io',
+  siteRepo: 'https://github.com/omar-kada/omar-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
-  locale: 'en-US',
+  email: 'kadaomar@hotmail.com',
+  github: 'https://github.com/omar-kada',
+  linkedin: 'https://www.linkedin.com/in/kada-omar',
+  locale: 'en-GB',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
-  analytics: {
+  /*analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports Plausible, Simple Analytics, Umami, Posthog or Google Analytics.
@@ -83,7 +74,7 @@ const siteMetadata = {
       // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'en',
     },
-  },
+  },*/
   search: {
     provider: 'kbar', // kbar or algolia
     kbarConfig: {

@@ -9,10 +9,10 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,tsx}',
     './components/**/*.{js,ts,tsx}',
-    './layouts/**/*.{js,ts,tsx}',
     './data/**/*.mdx',
+    './css/constants.ts',
   ],
-  darkMode: 'class',
+  darkMode: ['class'],
   theme: {
     extend: {
       lineHeight: {
@@ -25,8 +25,10 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: colors.blue,
         gray: colors.gray,
+        indigo: colors.indigo,
+        sky: colors.sky,
       },
       zIndex: {
         60: '60',
@@ -70,7 +72,14 @@ module.exports = {
           },
         },
       }),
+      dropShadow: {
+        glow: ['0 0px 5px rgba(255,255, 255, 0.45)', '0 0px 10px rgba(255, 255,255, 0.1)'],
+      },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
+  ],
 }
