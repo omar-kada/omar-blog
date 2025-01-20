@@ -398,7 +398,20 @@ export function NextJS(svgProps: SVGProps<SVGSVGElement>) {
   return (
     <svg {...svgProps} viewBox="0 0 128 128">
       <title>NextJS</title>
-      <circle cx="64" cy="64" r="64"></circle>
+      <defs>
+        <clipPath id="insideCircleOnly">
+          <circle cx="64" cy="64" r="64" />
+        </clipPath>
+      </defs>
+      <circle
+        clipPath="url(#insideCircleOnly)"
+        cx="64"
+        cy="64"
+        r="64"
+        fill="black"
+        stroke="white"
+        strokeWidth="4"
+      ></circle>
       <path
         fill="url(#a)"
         d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"
