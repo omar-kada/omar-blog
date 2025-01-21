@@ -104,8 +104,6 @@ function ExperienceProject({
 }: Props) {
   return (
     <>
-      <i className="devicon-devicon-plain"></i>
-
       <div className="flex gap-4 p-4">
         <div className="flex min-w-[140px] flex-col items-start gap-1">
           <h3 className="self-start">{dates}</h3>

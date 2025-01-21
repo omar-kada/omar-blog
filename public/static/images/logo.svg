@@ -1,24 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 200 200">
-    <!-- Inner White Square -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-100 -100 200 200">
+    <!-- outer star -->
     <rect x="-60" y="-60" width="120" height="120" fill="black" stroke="black" stroke-width="5"/>
-    <!-- Rotated Inner White Square -->
     <rect x="-60" y="-60" width="120" height="120" fill="black" stroke="black" stroke-width="5" transform="rotate(45)"/>
-    <!-- Outer Square -->
+    <!-- Outer white fill -->
     <rect x="-50" y="-50" width="100" height="100" fill="white" stroke="white"  stroke-width="5"/>
-    <!-- Rotated Outer Square -->
     <rect x="-50" y="-50" width="100" height="100" fill="white" stroke="white"  stroke-width="5" transform="rotate(45)"/>
-    <!-- Inner White Square -->
+    <!-- Inner star -->
     <rect x="-40" y="-40" width="80" height="80" fill="black" stroke="black" stroke-width="5"/>
-    <!-- Rotated Inner White Square -->
     <rect x="-40" y="-40" width="80" height="80" fill="black" stroke="black" stroke-width="5" transform="rotate(45)"/>
-    <!-- Inner White Square -->
+    <!-- Inner white fill -->
     <rect x="-30" y="-30" width="60" height="60" fill="white" stroke="white" stroke-width="5"/>
-    <!-- Rotated Inner White Square -->
     <rect x="-30" y="-30" width="60" height="60" fill="white" stroke="white" stroke-width="5" transform="rotate(45)"/>
 
-
-  
-      <circle cx="0" cy="0" r="25" fill="black"/>
-      <circle cx="0" cy="0" r="15" fill="white"/>
-
+    <!-- Inner circle -->
+    <circle cx="0" cy="0" r="22" fill="black"/>
+    <!-- Inner white fill -->
+    <circle cx="0" cy="0" r="12" fill="white"/>
 </svg>
