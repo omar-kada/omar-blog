@@ -1,6 +1,7 @@
 import * as socialIcons from './social-icons'
 import * as techIcons from './tech-icons'
 import * as companiesIcons from './companies-icons'
+import { twMerge } from 'tailwind-merge'
 
 const icons = { ...socialIcons, ...techIcons, ...companiesIcons }
 export type IconKind = keyof typeof icons | string
@@ -9,11 +10,10 @@ type IconProps = {
   kind: IconKind
   href?: string | undefined
   size?: number
-  sizeX?: number
-  sizeY?: number
+  className?: string
 }
 
-export const Icon = ({ kind, href, size = 8, sizeX, sizeY }: IconProps) => {
+export const Icon = ({ kind, href, size = 8, className = '' }: IconProps) => {
   const Svg = icons[kind]
   if (!Svg) {
     return null
@@ -22,7 +22,10 @@ export const Icon = ({ kind, href, size = 8, sizeX, sizeY }: IconProps) => {
     <>
       <span className="sr-only">{kind}</span>
       <Svg
-        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${sizeY ?? size} w-${sizeX ?? size}`}
+        className={twMerge(
+          `fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${size} w-${size}`,
+          className
+        )}
       />
     </>
   )

@@ -104,11 +104,11 @@ function ExperienceProject({
 }: Props) {
   return (
     <>
-      <div className="flex gap-4 p-4">
-        <div className="flex min-w-[140px] flex-col items-start gap-1">
-          <h3 className="self-start">{dates}</h3>
-          <div className="flex flex-grow flex-col justify-center gap-4">
-            <Icon kind={icon} sizeX={16} sizeY={10}></Icon>
+      <div className="flex flex-col gap-4 p-4 sm:flex-row">
+        <div className="flex min-w-[140px] flex-row items-start justify-between gap-1 sm:flex-col">
+          <h3 className="self-center sm:self-start">{dates}</h3>
+          <div className="flex flex-col items-end justify-center gap-4 sm:flex-grow sm:items-start">
+            <Icon kind={icon} className="h-12 w-12"></Icon>
             <div>{company}</div>
           </div>
         </div>
