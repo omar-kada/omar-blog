@@ -56,7 +56,7 @@ export function SocieteGenerale(svgProps: SVGProps<SVGSVGElement>) {
       {...svgProps}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 64 64"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       stroke="white"
     >
       <path d="M0 0h64v32.676H0z" fill="#ed1a3b" />

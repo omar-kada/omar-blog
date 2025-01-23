@@ -5,7 +5,7 @@ import { lightText } from '@/css/constants'
 export function Education() {
   return (
     <>
-      <Section title="Education">
+      <Section title="Education" className="h-full">
         <div className="p-4">
           <h3>Master Software Science and technology </h3>
           <div className={lightText}> - University of Pierre & Marie Curie, Paris, 2017 </div>
