@@ -13,7 +13,16 @@ export function Experience() {
           project="Loanscape"
           icon="CreditAgricole"
           company="Crédit Agricole"
-          technologies={['Spring', 'Angular', 'Docker', 'Kubernetes', 'GitlabCI']}
+          technologies={[
+            'Spring',
+            'Angular',
+            'Docker',
+            'Kubernetes',
+            'GitlabCI',
+            'GraphQL',
+            'Hibernate',
+            'Liquibase',
+          ]}
         >
           <li>
             Participate in the
@@ -30,11 +39,12 @@ export function Experience() {
           </li>
           <li>
             Enhance both
-            <span className={strongText}> users and developers experience </span>
+            <span className={strongText}> users and developers experience, </span>
+            by proposing/implementing cleaner improvements to our UI and codebase
           </li>
           <li>
-            <i className={strongText}> Collaborate </i> with different types of actors within an{' '}
-            <i className={strongText}> international program </i>
+            <span className={strongText}> Collaborate </span> with different types of actors within
+            an <span className={strongText}> international program </span>
           </li>
         </ExperienceProject>
         <ExperienceProject
@@ -47,14 +57,20 @@ export function Experience() {
         >
           <li>
             Participated in the <i className={strongText}>maintaining and evolution </i> of a
-            securities management application, used in multiple international global markets
+            securities management application, used in
+            <i className={strongText}> multiple international markets </i>
           </li>
           <li>
-            Helped improve <i className={strongText}>performance</i>, streamline and enrich complex
-            processes (profiling, refactoring)
+            Worked mainly on <span className={strongText}> transaction provisioning</span>,
+            requiring complex calculations process to ensure the avaiability of funds at the time of
+            the transaction
           </li>
           <li>
-            <i className={strongText}>Investigated</i> & fixed anomalies in production
+            Helped improve <span className={strongText}>performance</span>, streamline and enrich
+            business processes <i>(profiling, refactoring)</i>
+          </li>
+          <li>
+            <span className={strongText}>Investigated</span> & fixed anomalies in production
           </li>
         </ExperienceProject>
         <ExperienceProject
@@ -66,7 +82,7 @@ export function Experience() {
           technologies={['Java', 'Angular', 'Swagger', 'REST']}
         >
           <li>
-            Participated in the <i className={strongText}>revamp</i> of a document management
+            Participated in the <span className={strongText}>revamp</span> of a document management
             application using modern technologies
           </li>
           <li>
@@ -75,7 +91,7 @@ export function Experience() {
           </li>
           <li>
             Integrated the <span className={strongText}>professional</span> world of software
-            development (Teamwork, Communication)
+            development <i>(Teamwork, Communication)</i>
           </li>
         </ExperienceProject>
       </Section>

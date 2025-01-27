@@ -42,14 +42,15 @@ export function Resume() {
                 tags={[
                   'SQL',
                   'Hibernate',
+                  'Liquibase',
+                  'HTML',
+                  'CSS',
                   'Git',
                   'GitlabCI',
                   'Docker',
                   'Sonar',
                   'GraphQL',
                   'REST',
-                  'HTML',
-                  'CSS',
                 ]}
               />
             </div>
