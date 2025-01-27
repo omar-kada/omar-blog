@@ -6,7 +6,7 @@ import { Experience, Introduction, PersonalProjects, Education } from '.'
 
 export function Resume() {
   return (
-    <div className="md:px-10 md:py-10">
+    <div className="xl:px-10 xl:py-10">
       <div
         className={'grid gap-4 divide-y sm:grid-cols-1 md:grid-cols-3 md:divide-y-0 ' + divideStyle}
       >
@@ -70,7 +70,7 @@ export function Resume() {
         <div
           className={
             smAuto +
-            'col-span-1 m-1 flex justify-between gap-2 md:col-start-3 md:row-span-1 md:row-start-3 md:flex-col'
+            'col-span-1 m-1 flex justify-between gap-2 md:col-start-3 md:row-span-1 md:row-start-3 md:flex-col md:justify-normal'
           }
         >
           <Section title="Languages" border={false}>
