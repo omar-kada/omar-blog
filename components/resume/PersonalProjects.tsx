@@ -21,14 +21,14 @@ export function PersonalProjects() {
         <li>Remote connection using Tailscale </li>
       </PersonalProject>
       <PersonalProject
-        title="Personal Blog"
+        title="Personal Blog - WIP"
         technologies={['React', 'NextJS', 'Tailwind']}
-        href="/"
+        href="/about"
       >
-        <div className={lightText + 'text-sm'}>
-          - Used as playgroud for my web and blogging projects
-        </div>
-        <div className={lightText + 'text-sm'}>- Learning & testing other technologies</div>
+        <li className={lightText + 'text-sm'}>
+          Used as playgroud for my web and blogging projects
+        </li>
+        <li className={lightText + 'text-sm'}>Learning & testing other technologies</li>
       </PersonalProject>
     </Section>
   )
