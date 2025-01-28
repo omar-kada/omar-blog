@@ -10,7 +10,6 @@ export default function Footer() {
           <Icon kind="Mail" href={`mailto:${siteMetadata.email}`} size={6} />
           <Icon kind="Github" href={siteMetadata.github} size={6} />
           <Icon kind="Linkedin" href={siteMetadata.linkedin} size={6} />
-          <Icon kind="Instagram" href={siteMetadata.instagram} size={6} />
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>

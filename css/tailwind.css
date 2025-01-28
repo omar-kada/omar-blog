@@ -73,9 +73,11 @@ h3 {
 strong {
   @apply dark:opacity-100;
 }
+
 .dashed-list {
   list-style-type: '- ';
 }
+
 @layer base {
   :root {
     --radius: 0.5rem;
