@@ -16,18 +16,28 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          <Link className="hover:text-primary-500" href="/">
+            {siteMetadata.title}
+          </Link>
         </div>
         <div className="text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
+          <Link
+            className="hover:text-primary-500"
+            href="https://github.com/timlrx/tailwind-nextjs-starter-blog"
+          >
             Blog based on Tailwind Nextjs starter blog by @timlrx
           </Link>
         </div>
 
         <div className="mb-8 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://devicon.dev/">Tech icons from devicon.dev</Link>
+          <Link className="hover:text-primary-500" href="https://devicon.dev/">
+            Tech icons from devicon.dev
+          </Link>
           <span>{` • `}</span>
-          <Link href="https://www.flaticon.com/free-icons/ramadan">
+          <Link
+            className="hover:text-primary-500"
+            href="https://www.flaticon.com/free-icons/ramadan"
+          >
             Logo icon created by Freepik - Flaticon
           </Link>
         </div>

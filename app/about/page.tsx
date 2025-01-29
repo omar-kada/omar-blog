@@ -16,7 +16,7 @@ export default function Page() {
           title="Download CV"
           href="/static/documents/Omar KADA - CV 2025.pdf"
           className={
-            ' fixed bottom-4 right-4 h-12 w-12 rounded-full ' +
+            ' fixed bottom-4 right-4 h-14 w-14 rounded-full p-3 ' +
             ' flex items-center justify-center ' +
             ' bg-black text-white hover:text-primary-500 dark:bg-white dark:text-black ' +
             border
