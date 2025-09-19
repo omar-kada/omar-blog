@@ -21,14 +21,19 @@ export function PersonalProjects() {
         <li>Remote connection using Tailscale </li>
       </PersonalProject>
       <PersonalProject
-        title="Personal Blog - WIP"
-        technologies={['React', 'NextJS', 'Tailwind']}
-        href="/about"
+        title="Auto-Nas - WIP"
+        technologies={['Docker', 'Bash']}
+        href="https://github.com/omar-kada/autonas"
       >
         <li className={lightText + 'text-sm'}>
-          Used as playgroud for my web and blogging projects
+          Linux scripts used to easily deploy self hosted services on a home server
         </li>
-        <li className={lightText + 'text-sm'}>Learning & testing other technologies</li>
+        <li className={lightText + 'text-sm'}>
+          Using a single command and a single configuration file
+        </li>
+        <li className={lightText + 'text-sm'}>
+          Handle version and configuration updates using Git
+        </li>
       </PersonalProject>
     </Section>
   )
@@ -48,8 +53,8 @@ function PersonalProject({ title, children, technologies, href }: Props) {
         <h3>{title}</h3>
         {href ? (
           <span>
-            <CustomLink href="/">
-              <ArrowUpRight href="/" size={20}></ArrowUpRight>
+            <CustomLink href={href}>
+              <ArrowUpRight href={href} size={20}></ArrowUpRight>
             </CustomLink>
           </span>
         ) : null}
